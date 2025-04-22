@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Image Compression Tool - Optimize Your Images Online">
+    <meta name="keywords" content="image compression, online tools, image optimizer">
+    <meta name="author" content="Your Name">
+    <title>Tools Hub - Image Compression Tool</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f1e0; /* Soft beige background */
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6a1b3d; /* Deep maroon */
+            padding: 15px 30px;
+        }
+        .navbar h1 {
+            color: white;
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        .navbar ul li a:hover {
+            color: #f1d6c1; /* Light beige on hover */
+        }
+        .hero-section {
+            background-color: #6a1b3d;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        .cta-btn {
+            background-color: #f1d6c1; /* Light beige button */
+            color: #6a1b3d;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-btn:hover {
+            background-color: #9e2a47; /* Maroon hover */
+            color: white;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .tools-section {
+            text-align: center;
+            margin-top: 60px;
+        }
+        .tools-section h2 {
+            font-size: 2.5em;
+            color: #6a1b3d;
+        }
+        .tools-section p {
+            font-size: 1.1em;
+            color: #333;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .tool-card {
+            background-color: #f9f1e0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-top: 40px;
+        }
+        .tool-card .tool-title {
+            font-size: 2em;
+            color: #6a1b3d;
+            margin-bottom: 20px;
+        }
+        .tool-card .tool-description {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .tool-card .upload-btn {
+            padding: 15px 30px;
+            background-color: #6a1b3d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .tool-card .upload-btn:hover {
+            background-color: #9e2a47; /* Lighter maroon on hover */
+        }
+        .image-preview {
+            max-width: 100%;
+            max-height: 400px;
+            margin-top: 30px;
+            border: 5px solid #f1d6c1; /* Soft border around the preview image */
+            border-radius: 8px;
+        }
+        .compression-level {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .compression-level input {
+            width: 100%;
+            -webkit-appearance: none;
+            background: #f1d6c1;
+            height: 10px;
+            border-radius: 5px;
+            outline: none;
+        }
+        .compression-level input::-webkit-slider-runnable-track {
+            background: #9e2a47;
+        }
+        .compression-level input::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background: #6a1b3d;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+        }
+        .footer {
+            background-color: #6a1b3d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+            .cta-btn {
+                padding: 10px 30px;
+                font-size: 1em;
+            }
+            .tool-card {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Tools Hub</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h2>Welcome to Tools Hub</h2>
+        <p>Your go-to destination for powerful and easy-to-use online tools. Start optimizing your images with our Image Compression Tool.</p>
+        <button class="cta-btn">Try Our Tools Now</button>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="container">
+        <div class="tools-section">
+            <h2>Our Featured Tools</h2>
+            <p>We offer a variety of online tools to help you save time and get things done efficiently. Our tools are fast, easy to use, and accessible from any device.</p>
+
+            <!-- Image Compression Tool Card with Hyperlink -->
+            <a href="/img-compress.html" class="tool-card">
+                <div class="tool-title">Image Compression Tool</div>
+                <div class="tool-description">Compress your images to save space without losing quality. Upload an image, select your compression level, and get a faster, optimized version.</div>
+            </a>
+
+            <!-- Hidden Form for Image Compression Tool -->
+            <div id="/img-compress.html" class="tool-card">
+                <button class="upload-btn" onclick="document.getElementById('file-upload').click()">Upload Image</button>
+                <input type="file" id="file-upload" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                <div class="compression-level">
+                    <label for="compression-level">Select Compression Level</label>
+                    <input type="range" id="compression-level" min="1" max="100" value="50" step="1">
+                    <div id="compression-value">50%</div>
+                </div>
+                <img id="image-preview" class="image-preview" src="" alt="Image Preview">
+                <button class="upload-btn" onclick="compressImage()">Compress Image</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Tools Hub. All rights reserved.</p>
+    </div>
+
+    <script>
+        const compressionLevel = document.getElementById('compression-level');
+        const compressionValue = document.getElementById('compression-value');
+        const imagePreview = document.getElementById('image-preview');
+
+        // Update compression value
+        compressionLevel.addEventListener('input', () => {
+            compressionValue.textContent = compressionLevel.value + '%';
+        });
+
+        // Preview uploaded image
+        function previewImage(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Compress image
+        function compressImage() {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            img.onload = function() {
+                const scaleFactor = compressionLevel.value / 100;
+                const width = img.width * scaleFactor;
+                const height = img.height * scaleFactor;
+                canvas.width = width;
+                canvas.height = height;
+                ctx.drawImage(img, 0, 0, width, height);
+                canvas.toBlob((blob) => {
+                    const url = URL.createObjectURL(blob);
+                    imagePreview.src = url;
+                }, 'image/jpeg', compressionLevel.value / 100);
+            };
+            img.src = imagePreview.src;
+        }
+    </script>
+
+</body>
+</html>
