@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tools Directory</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0d1117;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .search-container {
+      padding: 20px;
+      text-align: center;
+    }
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .tool-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .tool-card h3 {
+      margin-top: 0;
+    }
+    .tool-card button {
+      background-color: #2f81f7;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tool-card button:hover {
+      background-color: #1c6ed3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI Tools Directory</h1>
+    <p>Discover powerful AI tools by category</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search tools by name or category..." onkeyup="searchTools()" />
+  </div>
+
+  <div class="tool-grid" id="toolGrid">
+    <!-- Sample Tools -->
+    <div class="tool-card" data-category="Image Generation">
+      <h3>Midjourney</h3>
+      <p>High-quality AI art generator using Discord commands.</p>
+      <button onclick="window.open('https://midjourney.com')">Visit</button>
+    </div>
+    <div class="tool-card" data-category="Image Generation">
+      <h3>DALL·E</h3>
+      <p>AI image creation by OpenAI with text prompts.</p>
+      <button onclick="window.open('https://openai.com/dall-e')">Visit</button>
+    </div>
+    <div class="tool-card" data-category="Image Generation">
+      <h3>Leonardo AI</h3>
+      <p>Creative design tool for artists and developers.</p>
+      <button onclick="window.open('https://leonardo.ai')">Visit</button>
+    </div>
+    <div class="tool-card" data-category="Image Generation">
+      <h3>Craiyon</h3>
+      <p>Free AI image generator (formerly DALL·E mini).</p>
+      <button onclick="window.open('https://www.craiyon.com')">Visit</button>
+    </div>
+    <div class="tool-card" data-category="Image Generation">
+      <h3>Artbreeder</h3>
+      <p>AI tool to remix and evolve images.</p>
+      <button onclick="window.open('https://www.artbreeder.com')">Visit</button>
+    </div>
+  </div>
+
+  <script>
+    function searchTools() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const cards = document.getElementsByClassName("tool-card");
+      for (let card of cards) {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? "block" : "none";
+      }
+    }
+  </script>
+</body>
+</html>
